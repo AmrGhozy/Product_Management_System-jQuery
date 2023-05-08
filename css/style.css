@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #222;
+    position: relative;
+    color: #fff;
+    font-family: system-ui;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+}
+.curd {
+    width: 80%;
+    margin: auto;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: #470053;
+}
+h3 a {
+    transition: 0.5s;
+}
+h3 a:hover {
+    color: #6c027e;
+    letter-spacing: 2px;
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px 0;
+}
+input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    margin: 4px 0;
+    border-radius: 5px;
+    padding: 4px;
+    color: white;
+    display: block;
+    transition: 1s;
+}
+input:focus {
+    background-color: black;
+    transform: scale(1.1);
+}
+.price {
+    display: flex;
+    gap: 5px;
+}
+.price * {
+    flex: 1;
+}
+.price small {
+    background-color: #a00d02;
+    margin: 4px 0;
+    border-radius: 5px;
+    padding: 5px;
+}
+.price small::before {
+    content: "Total: ";
+}
+.price small::after {
+    content: "$";
+}
+button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #470053;
+    border-radius: 20px;
+    color: white;
+    transition: 0.5s;
+}
+#update {
+    display: none;
+}
+button:hover {
+    background-color: #51025f;
+    letter-spacing: 2px;
+}
+
+.btnSearch {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.btnSearch button {
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+.t {
+    overflow-y: auto;
+    max-height: 300px;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    font-size: 15px;
+    min-width: 1000px;
+    max-width: 100%;
+    border-spacing: 0;
+    text-align: center;
+    border-bottom: 1px;
+    padding: 5px;
+    position: relative;
+}
+table th {
+    text-transform: uppercase;
+}
+thead {
+    background-color: #222;
+    position: sticky;
+    top: 0;
+}
+th, td {
+    padding: 5px;
+    border: 0.5px solid #a4a4a4;
+}
+
+
+@media (max-width: 767px) {
+    .curd {
+        width: 92%;
+    }
+    .btnSearch button {
+        width: 50%;
+        font-size: 12px;
+    }
+    .price {
+        display: block;
+    }
+    .price small {
+        display: block;
+    }
+    button:hover {
+        letter-spacing: 1px;
+    }
+}
+
+
+
+
